@@ -1,0 +1,21 @@
+{
+  "name": "bingo-backend",
+  "version": "1.0.0",
+  "description": "Backend para sistema de bingo multiplayer",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["bingo", "multiplayer", "websocket"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.1"
+  }
+}
+
