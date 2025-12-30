@@ -471,6 +471,6 @@ app.get('*', (req, res) => {
 
 httpServer.listen(PORT, () => {
   console.log(`🚀 Servidor rodando na porta ${PORT}`);
-  console.log(`📱 Acesse: http://localhost:${PORT}`);
+  console.log(`📱 Produção: https://bingo-vkkl.onrender.com`);
 });
 
