@@ -13,8 +13,11 @@ const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: "*",
-    methods: ["GET", "POST"]
+    origin: process.env.NODE_ENV === 'production' 
+      ? ["https://bingo-vkkl.onrender.com", "https://*.onrender.com"]
+      : "*",
+    methods: ["GET", "POST"],
+    credentials: true
   }
 });
 
